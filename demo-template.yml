@@ -7,4 +7,4 @@ items:
   - Alaska:
       name: Alaska
       subset: state=="Alaska"
-      data_filename: al.csv
+      data_filename: ak.csv
