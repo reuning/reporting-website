@@ -1,7 +1,6 @@
 ---
-title: Basic Teplate
-format:
-  report-template-html: default
+title: Basic Template
+format: html
 author: Kevin Reuning
 date: last-modified
 ---

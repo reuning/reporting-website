@@ -6,12 +6,10 @@ contributes:
   project:
     project:
       type: website
-    website: 
-    render: 
-      -"!*-template.qmd"
-    format: report-html
+      pre-render: template-expand.R
+      render: 
+        -"!/demo-template.qmd"
+    format: template-html
   formats:
-    report-template:
-        html:
-          toc: true
-          theme: [custom.scss]
+      html:
+        theme: [default, custom.scss]

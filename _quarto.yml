@@ -1,11 +1,3 @@
 project:
   title: "Reports"
   type: reporting-website
-  pre-render: template-expand.R
-
-format:
-  report-template-html:
-    toc: true
-
-format: 
-  html: 
