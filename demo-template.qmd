@@ -1,0 +1,15 @@
+---
+title: Basic Teplate
+format:
+  report-template-html: default
+author: Kevin Reuning
+date: last-modified
+---
+
+## {{< template name >}}
+
+
+```{r}
+data_file <- read.csv({{< template filename >}})
+
+```

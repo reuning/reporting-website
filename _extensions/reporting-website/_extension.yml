@@ -1,0 +1,17 @@
+title: Reporting Website
+author: Kevin Reuning
+version: 0.0.1
+quarto-version: ">=1.2.0"
+contributes:
+  project:
+    project:
+      type: website
+    website: 
+    render: 
+      -"!*-template.qmd"
+    format: report-html
+  formats:
+    report-template:
+        html:
+          toc: true
+          theme: [custom.scss]

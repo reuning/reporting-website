@@ -1,0 +1,10 @@
+project:
+  title: "Reports"
+  type: reporting-website
+
+format:
+  report-template-html:
+    toc: true
+
+format: 
+  html: 

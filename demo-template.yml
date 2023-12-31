@@ -1,0 +1,10 @@
+data: data("USArrests")
+items: 
+  - Alabama:
+      name: Alabama
+      subset: USArrests["Alabama", ]
+      data_filename: al.csv
+  - Alaska:
+      name: Alaska
+      subset: state=="Alaska"
+      data_filename: al.csv
