@@ -10,6 +10,7 @@ date: last-modified
 
 
 ```{r}
-data_file <- read.csv({{< template filename >}})
-
+state_data <- read.csv({{< template data_filename >}})
 ```
+
+The murder rate for {{< template name >}} was `r state_data$Murder` while the assault rate was `r state_data$assault`
