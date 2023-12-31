@@ -16,20 +16,37 @@ yml_files <- gsub("qmd$", "yml", template_files)
 
 
 for (ii in seq_along(template_files)){
+
     template <- readLines(template_files[ii])
-    vars <- read_yaml(yml_files[ii])
-    if ("data" %in% names(vars)) {
+    all_vars <- read_yaml(yml_files[ii])
+
+    if ("data" %in% names(all_vars)) {
         ## Loading data if is set
-        eval(parse(text = vars$data))
+        eval(parse(text = all_vars$data))
     }
 
-    items <- unlist(vars$items, recursive = FALSE)
+    items <- unlist(all_vars$items, recursive = FALSE)
+    file_out <- template
     for (jj in seq_along(items)){
 
-        if ("filename" %in% names(items[[jj]])) {
-            eval(parse(text = paste0("tmp_df <- ", items[[jj]]$subset)))
-            write.csv(tmp_df, items[[jj]]$filename, row.names = FALSE)
+        if ("data" %in% names(items[[jj]])) {
+            eval(parse(text = paste0("tmp_df <- ", items[[jj]]$data$subset)))
+            write.csv(tmp_df, items[[jj]]$data$filename, row.names = FALSE)
+
+            file_out <- gsub("\\{\\{< template data_filename >\\}\\}",
+                             paste0("\"", items[[jj]]$data$filename, "\""),
+                             file_out)
+
         }
+        vars <- items[[jj]]
+        vars$data <- NULL
+        for (kk in seq_along(vars)) {
+            file_out <- gsub(paste0("\\{\\{< template ",
+                                    names(vars)[kk], " >\\}\\}"),
+                             vars[[kk]], file_out)
+        }
+
+        writeLines(file_out, paste0(names(items)[[jj]], ".qmd"))
     }
 
 }
