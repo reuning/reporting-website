@@ -1,4 +1,3 @@
-
 if (!require(yaml)) {
     simpleError("Please install the yaml package")
 }
