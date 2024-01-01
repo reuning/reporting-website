@@ -26,8 +26,8 @@ for (ii in seq_along(template_files)){
     }
 
     items <- unlist(all_vars$items, recursive = FALSE)
-    qmd_out <- template
     for (jj in seq_along(items)){
+        qmd_out <- template
 
         if ("data" %in% names(items[[jj]])) {
             eval(parse(text = paste0("tmp_df <- ", items[[jj]]$data$subset)))
