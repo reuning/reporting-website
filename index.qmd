@@ -1,0 +1,9 @@
+---
+title: Index
+format: html
+author: Kevin Reuning
+date: last-modified
+---
+
+
+See info on [Alabama.qmd](Alabama.qmd)
