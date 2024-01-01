@@ -14,7 +14,9 @@ if (length(template_files) == 0) {
 yml_files <- gsub("qmd$", "yml", template_files)
 
 if("keep-files" %in% names(yml_files)){
-    if(yml_files$keep_files == TRUE) stop("Not data deleting files")
+    if(yml_files$keep_files %in% c("TRUE", "true", "True")) {
+        stop("Not data deleting files")
+    }
 }
 
 for (ii in seq_along(template_files)){
