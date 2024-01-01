@@ -6,4 +6,4 @@ date: last-modified
 ---
 
 
-See info on [Alabama.qmd](Alabama.qmd)
+For details on any state see the index to the side. 
