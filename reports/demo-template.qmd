@@ -1,8 +1,5 @@
 ---
 title: Basic Template
-format: html
-author: Kevin Reuning
-date: last-modified
 ---
 
 ## {{< template name >}}
