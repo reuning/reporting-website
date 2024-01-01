@@ -1,0 +1,11 @@
+---
+title: Alaska
+---
+
+
+```{r}
+#| echo: false
+state_data <- read.csv("ak.csv")
+```
+
+The murder rate for Alaska was `r state_data$Murder` while the assault rate was `r state_data$Assault`
