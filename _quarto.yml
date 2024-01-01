@@ -1,3 +1,13 @@
 project:
-  title: "Reports"
   type: reporting-website
+
+website: 
+  title: "Demo Website"
+  navbar: 
+    left:
+      - text: Home
+        file: index.qmd
+ 
+  sidebar: 
+    type: docked
+    contents: reports
