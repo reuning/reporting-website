@@ -5,4 +5,4 @@ date: last-modified
 ---
 
 
-For details on any state see the index to the side. 
+For details on any state see the index to the side. You might find [California's](reports/California.qmd) especially interesting.
