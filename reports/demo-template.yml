@@ -10,3 +10,9 @@ items:
       data: 
         subset: USArrests["Alaska", ]
         filename: ak.csv
+  - California:
+      name: California
+      data: 
+        subset: USArrests["California", ]
+        filename: ca.csv
+
