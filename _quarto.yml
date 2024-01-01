@@ -1,7 +1,7 @@
 project:
   type: reporting-website
 
-website: 
+reporting-website: 
   title: "Demo Website"
   navbar: 
     left:
@@ -11,3 +11,8 @@ website:
   sidebar: 
     type: docked
     contents: reports
+
+format:
+  html: 
+    toc: false 
+    author: "Kevin Reuning"
