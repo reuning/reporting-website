@@ -81,7 +81,7 @@ The one special keyword is {{< template data_filename >}} which will be replaced
 
 ## Example
 
-There is an example [template.qmd](reports/demo-template.qmd) and associated [yaml file](reports/demo-template.yml) in the reports folder. I included an [index.qmd](index.qmd) file to demonstrate how a website might be setup with a homepage, and then the reports in a subfolder. 
+There is an example [template.qmd](reports/demo-template.qmd) and associated [yaml file](reports/demo-template.yml) in the reports folder. I included an [index.qmd](index.qmd) file to demonstrate how a website might be setup with a homepage, and then the reports in a subfolder. This code generates [the following website](https://reuning.github.io/reporting-website/)
 
 ## Warnings/Things to Consider
 
