@@ -1,12 +1,11 @@
 ---
-title: Basic Template
+title: {{< template name >}}
 ---
-
-## {{< template name >}}
 
 
 ```{r}
+#| echo: false
 state_data <- read.csv({{< template data_filename >}})
 ```
 
-The murder rate for {{< template name >}} was `r state_data$Murder` while the assault rate was `r state_data$assault`
+The murder rate for {{< template name >}} was `r state_data$Murder` while the assault rate was `r state_data$Assault`
