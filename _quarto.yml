@@ -1,7 +1,7 @@
 project:
   type: reporting-website
 
-reporting-website: 
+website: 
   title: "Demo Website"
   navbar: 
     left:
@@ -15,4 +15,4 @@ reporting-website:
 format:
   html: 
     toc: false 
-    author: "Kevin Reuning"
+    theme: cosmo

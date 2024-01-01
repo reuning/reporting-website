@@ -1,7 +1,6 @@
 ---
 title: Index
 format: html
-author: Kevin Reuning
 date: last-modified
 ---
 
