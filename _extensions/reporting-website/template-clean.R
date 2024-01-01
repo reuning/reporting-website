@@ -19,13 +19,15 @@ if("keep-files" %in% names(yml_files)){
 
 for (ii in seq_along(template_files)){
 
+    base_path <- dirname(yml_files[ii])
     all_vars <- read_yaml(yml_files[ii])
 
     items <- unlist(all_vars$items, recursive = FALSE)
     for (jj in seq_along(items)){
 
         if ("data" %in% names(items[[jj]])) {
-            file.remove(items[[jj]]$data$filename)
+            file_out <- file.path(base_path, items[[jj]]$data$filename)
+            file.remove(file_out)
         }
 
     }
