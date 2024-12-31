@@ -6,7 +6,7 @@
 quarto use template reuning/reporting-website
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your website. You must also install the R package [yaml][https://github.com/vubiostat/r-yaml/]: 
+This will install the extension and create an example qmd file that you can use as a starting place for your website. You must also install the R package [yaml](https://github.com/vubiostat/r-yaml/): 
 
 ```r
 install.packages("yaml") 
